@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="icon" href="favicon.png">
-  <link rel="stylesheet" href="style.min.css">
-  <style>
-    nav a {
-      color: white !important;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    body.dark-mode nav a {
-      color: white !important;
-    }
-  </style>
+    <title>Contact</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DIM Won, LLC is a privately held investment holding company focused on long-term value creation through strategic investments, real estate, and equity holdings.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="DIM Won, LLC">
+    <meta property="og:description" content="Building powerful investments, brands, and opportunities.">
+    <meta property="og:image" content="https://dimwon.com/images/hero.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dimwon.com/">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.min.css">
+
 </head>
 <body>
-  <header>
+<button id="darkToggle" aria-label="Toggle Dark Mode">🌓 Mode</button>
+
+<header>
     <h1>DIM Won</h1>
-    <button id="darkToggle" aria-label="Toggle Dark Mode">🌓 Mode</button>
     <nav aria-label="Main Navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
     </nav>
-  </header>
-  <main>
-    <section>Contact Us
-<form><input type='text' placeholder='Name'> <input type='email' placeholder='Email'> <input type='text' placeholder='Message'> <button type='submit'>Send</button></form><p>You can also reach us at <a href='mailto:admin@dimwon.com'>admin@dimwon.com</a> or call 1-(888) 734-6966.</p></section>
-  </main>
-  <footer>
-    <p>&copy; 2025 DIM Won, LLC. All rights reserved. | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a></p>
-  </footer>
-  <script src="script.min.js"></script>
+</header>
+
+<main class="aos">
+
+<h2>Contact Us</h2>
+<form action="https://formspree.io/f/mnqezyao" method="POST">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="_replyto" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">Send</button>
+</form>
+<p>You can also reach us directly at <a href="mailto:admin@dimwon.com">admin@dimwon.com</a> or call 1 (888) 734-6966.</p>
+
+</main>
+
+<footer>
+    &copy; 2025 DIM Won, LLC. All rights reserved. |
+    <a href="privacy.html">Privacy</a> |
+    <a href="terms.html">Terms</a>
+</footer>
+
+<script src="script.min.js"></script>
 </body>
 </html>
