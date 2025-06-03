@@ -66,15 +66,6 @@ main {
     margin-bottom: 2rem;
 }
 
-.values ul {
-    list-style: none;
-    padding: 0;
-}
-
-.values li {
-    margin-bottom: 0.5rem;
-}
-
 footer {
     background-color: #222;
     color: white;
@@ -88,4 +79,42 @@ footer a {
     margin: 0 10px;
     text-decoration: none;
     font-size: 0.9rem;
+}
+
+/* Dark mode */
+.dark {
+    background-color: #121212;
+    color: #eee;
+}
+
+.dark header, .dark footer {
+    background-color: #1e1e1e;
+}
+
+.dark nav a {
+    color: #eee;
+}
+
+#darkToggle {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Scroll animation */
+.aos {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.aos-animate {
+    opacity: 1;
+    transform: translateY(0);
 }
