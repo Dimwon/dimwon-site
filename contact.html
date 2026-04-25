@@ -57,8 +57,13 @@
             </dl>
           </div>
 
-          <form class="form" method="POST" data-static-form-name="contact">
-            <input type="hidden" name="form-name" value="contact" />
+          <form class="form" action="https://formsubmit.co/admin@dimwon.com" method="POST">
+            <!-- FormSubmit configuration -->
+            <input type="hidden" name="_subject" value="New inquiry via dimwon.com" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://dimwon.com/thanks.html" />
+            <input type="hidden" name="_honey" value="" tabindex="-1" autocomplete="off" />
+
             <div>
               <label for="name">Name</label>
               <input id="name" name="name" type="text" autocomplete="name" required />
