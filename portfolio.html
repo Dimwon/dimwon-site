@@ -1,53 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Portfolio</title>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DIM Won, LLC is a privately held investment holding company focused on long-term value creation through strategic investments, real estate, and equity holdings.">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="DIM Won, LLC">
-    <meta property="og:description" content="Building powerful investments, brands, and opportunities.">
-    <meta property="og:image" content="https://dimwon.com/images/hero.jpg">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dimwon.com/">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio &mdash; DIM Won, LLC</title>
+  <meta name="description" content="DIM Won, LLC invests across diversified asset classes including public markets, real estate, and private ventures, with a long-term ownership orientation." />
+  <meta name="theme-color" content="#141414" />
+  <link rel="canonical" href="https://dimwon.com/portfolio.html" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DIM Won, LLC" />
+  <meta property="og:title" content="Portfolio &mdash; DIM Won, LLC" />
+  <meta property="og:description" content="Diversified asset classes that support long-term value creation." />
+  <meta property="og:url" content="https://dimwon.com/portfolio.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<button id="darkToggle" aria-label="Toggle Dark Mode">🌓 Mode</button>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="DIM Won, LLC home"><img src="logo-header.png" alt="DIM Won, LLC" width="480" height="234" /></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="is-active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-<header>
-    <h1>DIM Won</h1>
-    <nav aria-label="Main Navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <span class="eyebrow">Portfolio</span>
+        <h1>Diversified ownership across asset classes.</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="container prose" style="max-width: none;">
+        <p style="max-width: 68ch;">DIM Won invests across asset classes that support long-term value creation. Our portfolio is constructed with patience and concentrated where we have conviction. We are owners first &mdash; we do not trade positions, and we do not pursue strategies we do not understand.</p>
+
+        <div class="sector-grid">
+          <article class="sector">
+            <h3>Public Markets</h3>
+            <p>Equities with stable economics, durable franchises, and the capacity to compound retained earnings over the long term.</p>
+          </article>
+          <article class="sector">
+            <h3>Real Estate</h3>
+            <p>Residential and commercial holdings selected for cash-flow stability, location quality, and structural demand over multi-decade horizons.</p>
+          </article>
+          <article class="sector">
+            <h3>Private Ventures</h3>
+            <p>Strategic ownership stakes and operating partnerships in private businesses with intelligible economics and a clear path to durability.</p>
+          </article>
+        </div>
+
+        <div class="placeholder-note">
+          <strong>A note on disclosure.</strong> As a private holding company, DIM Won, LLC does not publish a complete list of holdings. Specific portfolio companies may be added to this page as our investments grow and disclosure becomes appropriate.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 DIM Won, LLC. All rights reserved.</div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
         <a href="contact.html">Contact</a>
-    </nav>
-</header>
+      </nav>
+    </div>
+  </footer>
 
-<main class="aos">
-
-<h2>Our Portfolio</h2>
-<img src="images/portfolio.jpg" alt="Financial analysis interface" class="page-img">
-<p>DIM Won invests in diverse asset classes that support long-term value creation:</p>
-<ul>
-    <li><strong>Public Markets</strong>: Equities with stable dividends and capital growth potential</li>
-    <li><strong>Real Estate</strong>: Residential and commercial holdings in emerging markets</li>
-    <li><strong>Private Ventures</strong>: Strategic partnerships and brand investments</li>
-</ul>
-
-</main>
-
-<footer>
-    &copy; 2025 DIM Won, LLC. All rights reserved. |
-    <a href="privacy.html">Privacy</a> |
-    <a href="terms.html">Terms</a>
-</footer>
-
-<script src="script.min.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
