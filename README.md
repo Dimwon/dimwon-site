@@ -37,7 +37,7 @@ This is a static site. Drop the contents into any static host (GitHub Pages, Clo
 
 ## Contact form
 
-`contact.html` posts to **FormSubmit.co** at `https://formsubmit.co/admin@dimwon.com`. Submissions are emailed to `admin@dimwon.com`. After a successful submission, FormSubmit redirects the visitor to `thanks.html`.
+`contact.html` posts to **FormSubmit.co** using its **encrypted endpoint**: `https://formsubmit.co/00c0c3f36407f40d5b8e1b5ee6156840`. The opaque hash hides the recipient address from HTML scrapers. The hash is bound to `admin@dimwon.com`, so submissions are delivered there (NOT to `info@dimwon.com`, which is the public-facing display address only). After submission, FormSubmit redirects the visitor to `thanks.html`.
 
 Hidden config inputs in the form:
 
@@ -46,4 +46,4 @@ Hidden config inputs in the form:
 - `_next` &mdash; the URL FormSubmit redirects to after submission
 - `_honey` &mdash; honeypot field for spam protection
 
-**First-run note:** FormSubmit requires a one-time confirmation. The very first submission to a new email address triggers a "Confirm your email" message to `admin@dimwon.com`. Click the activation link in that email; subsequent submissions arrive normally.
+**Public-facing email vs. delivery address.** The site displays `info@dimwon.com` everywhere (mailto links, contact info, JSON-LD structured data, legal-page contacts). For incoming `info@` mail to actually reach a human, `info@dimwon.com` must be configured as a real address or alias &mdash; e.g., via Cloudflare Email Routing pointed at the operator's inbox. Form submissions are unaffected; they flow through the FormSubmit hash to `admin@dimwon.com` regardless of what's displayed.
